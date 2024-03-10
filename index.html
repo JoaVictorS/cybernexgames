@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jockey+One&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>CyberNexGames</title>
+  </head>
+  <body>
+    <div id="nav_bar">
+      <div id="logo">
+        <img src="assets/favicon.png" alt="logo" />
+      </div>
+      <img src="assets/logo.svg" alt="logo">
+
+      <nav>
+        <ul>
+          <li><img src="assets/home.svg" alt="home" /> Home</li>
+          <li><img src="assets/shop.svg" alt="shop" /> Loja</li>
+        </ul>
+      </nav>
+
+      <div id="purchased_items_container">
+        <h2>Itens Comprados</h2>
+        <ul id="purchased_items"></ul>
+      </div>
+    </div>
+
+    <main>
+      <header>
+        <h2>Página Inicial</h2>
+
+        <div id="acount">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY1NDwYhxQlxx-T3e248-haUSBah-1zn0HnA&usqp=CAU"
+            alt="et_fumano"
+          />
+
+          <p>oArea51</p>
+        </div>
+      </header>
+
+      <div id="main_container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="games_container">
+        <h2>Jogos</h2>
+
+        <div id="games_card"></div>
+      </div>
+
+      <div id="console_container">
+        <h2>Consoles e Itens</h2>
+
+        <div id="consoles_cards"></div>
+
+      </div>
+    </main>
+
+    <script src="main_games.js"></script>
+    <script src="main_console.js"></script>
+    <script src="navigation.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+      })
+    </script>
+  </body>
+</html>
